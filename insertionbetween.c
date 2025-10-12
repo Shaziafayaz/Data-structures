@@ -1,14 +1,29 @@
 #include <stdio.h>
+
 int main() {
     int arr[10] = {10, 20, 30, 40};
-    int n = 4, pos = 2, x = 25;  // insert at index 2
+    int n = 4,value, pos, i;
 
-    for (int i = n; i > pos; i--)  // shift right
+    printf("Enter element to insert: ");
+    scanf("%d", &value);
+    printf("Enter position (0 to %d): ", n);
+    scanf("%d", &pos);
+
+    
+    for(i = n; i > pos; i--) //shift right
+
+     {  
         arr[i] = arr[i-1];
+    }
 
-    arr[pos] = x;
+                        
+    arr[pos] = value;// insert new elemen
     n++;
 
-    for (int i = 0; i < n; i++) printf("%d ", arr[i]);
+    printf("Array after insertion in bwtween: ");
+    for(i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+
     return 0;
 }
+
