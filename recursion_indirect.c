@@ -6,14 +6,14 @@ void g(int x);
 void f(int x) {
     if (x > 0) {
         printf("f(%d)\n", x);
-        g(x - 1);
+        g(x - 1);//calls g
     }
 }
 
 void g(int x) {
     if (x > 0) {
         printf("g(%d)\n", x);
-        f(x - 1);
+        f(x - 1);//calls 1
     }
 }
 
