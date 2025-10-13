@@ -13,7 +13,7 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    if (num < 0)
+    if (num < 0)// less zero
         printf("Factorial is not defined for negative numbers.\n");
     else
         printf("Factorial of %d = %d\n", num, factorial(num));
